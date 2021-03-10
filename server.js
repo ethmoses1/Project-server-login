@@ -8,7 +8,7 @@ var corsOptions = {
   origin: "https://zeibrary.netlify.app/"
 };
 
-app.use(cors());
+app.use(cors({origin: "https://zeibrary.netlify.app/"}));
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
