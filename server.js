@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "https://zelibrarytest.herokuapp.com/"
+  origin: "https://vigorous-sinoussi-0d0c2e.netlify.app/"
 };
 
 app.use(cors(corsOptions));
