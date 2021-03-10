@@ -3,7 +3,7 @@ const controller = require("../controllers/user.controller");
 
 module.exports = function(app) {
   app.use('/', function(req, res, next) {
-    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Origin", "https://vigorous-sinoussi-0d0c2e.netlify.app/");
     // Request headers you wish to allow
     res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     // Set to true if you need the website to include cookies in the requests sent
