@@ -2,11 +2,12 @@ const { authJwt } = require("../middleware");
 const controller = require("../controllers/user.controller");
 
 module.exports = function(app) {
-  app.use(function(req, res, next) {
-    res.header(
-      "Access-Control-Allow-Headers",
-      "x-access-token, Origin, Content-Type, Accept"
-    );
+  app.use('/', function(req, res, next) {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    // Request headers you wish to allow
+    res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    // Set to true if you need the website to include cookies in the requests sent
+    res.setHeader('Access-Control-Allow-Credentials', true);
     next();
   });
 
