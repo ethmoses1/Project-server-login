@@ -5,10 +5,10 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "https://zeibrary.netlify.app/"
+  origin: "http://localhost:8081"
 };
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());

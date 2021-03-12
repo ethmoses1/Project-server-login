@@ -1,5 +1,5 @@
 exports.allAccess = (req, res) => {
-  res.status(200).send("Welcome to zeLibrary.");
+  res.status(200).send("Welcome to zeLibrary");
 };
 
 exports.userBoard = (req, res) => {
